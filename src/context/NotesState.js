@@ -7,8 +7,8 @@ const NotesState = (props) => {
   const init_notes = [];
   const [mynotes, setNotes] = useState(init_notes);
 
-  const getAllNotes = async () => {
-    const url = `${host}/notes/allnotes/`;
+  const getAllNotes = async() => {
+    const url = `${host}/notes/allnotes`;
     const response = await fetch(url, {
       method: "GET",
       headers: {
