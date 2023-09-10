@@ -6,7 +6,7 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const {name,email,password,cpassword}=credentials
+    const {name,email,password}=credentials
     // const url = `http://localhost:5000/auth/register/`;
     const url="https://mynotebook-dchh.onrender.com/auth/register"
     const response = await fetch(url, {
